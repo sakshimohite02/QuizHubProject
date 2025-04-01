@@ -1,0 +1,65 @@
+
+/* Background Styling */
+body {
+  background: linear-gradient(to right, #007bff, #6610f2);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* About Section */
+.about-container {
+  max-width: 900px;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+/* Header */
+.about-header h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.about-header p {
+  font-size: 1.2em;
+  color: #e0e0e0;
+}
+
+/* Cards */
+.card {
+  border-radius: 12px;
+  background: white;
+  color: #333;
+}
+
+/* Feature List */
+.feature-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.feature-list li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.feature-list li::before {
+  content: "✔";
+  color: #28a745;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Call-to-Action Button */
+.btn-success {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+  transform: scale(1.05);
+}

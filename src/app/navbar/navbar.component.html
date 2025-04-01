@@ -1,0 +1,50 @@
+<div class="container-fluid">
+  <div class="row">
+    <nav class="navbar navbar-expand-lg bg-primary   w-100" role="navigation" aria-label="Main Navigation">
+      
+      <img src="https://quiz.konfhub.com/logos/logo-dark.svg" height="80px" width="350px" alt="QuizHub Logo (Purple)"/>
+      
+      <!-- Toggler for smaller screens -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link ml-5" href="#" routerLink="/navbar/home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ml-5" href="#" routerLink="/navbar/quizzes">Quizzes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ml-5" href="#" routerLink="/navbar/about">About</a>
+          </li>
+
+          <li class="nav-item" *ngIf="username" style="margin-left: 500px;">
+            <span class="nav-link text-white">Hi, {{ username }} 👋</span>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-danger btn-sm ms-3" *ngIf="username" (click)="logout()"><i class="fa-solid fa-right-from-bracket"></i></button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  
+  <div class="row">
+    <div class="col-12 p-0">
+      <div class="content"><router-outlet></router-outlet></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 p-0">
+      <app-footer></app-footer>
+    </div>
+  </div>
+  
+</div>
+
+

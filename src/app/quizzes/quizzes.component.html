@@ -1,0 +1,23 @@
+<div class="container">
+  <h1 class="text-center text-primary mb-4">Programming Language Quizzes</h1>
+
+  <!-- Search Bar -->
+  <div class="mb-3">
+    <input type="text" class="form-control" placeholder="Search quizzes..." [(ngModel)]="searchText">
+  </div>
+
+  <div class="row">
+    <div class="col-md-4" *ngFor="let quiz of filteredQuizzes()">
+      <div class="card mb-4 mt-3 shadow-sm">
+        <img [src]="quiz.image" class="card-img-top" [alt]="quiz.title" />
+        <div class="card-body">
+          <h5 class="card-title">{{ quiz.title }}</h5>
+          <p class="card-text">{{ quiz.description }}</p>
+          <button class="btn btn-primary" [routerLink]="['/navbar/quiz', quiz.id]">Start Quiz</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  

@@ -1,0 +1,31 @@
+<div class="quiz-container">
+  <div class="quiz-card">
+    <div class="text-center">
+      <h1><i class="fa-solid fa-brain"></i> Welcome Back to QuizHub</h1>
+      <h5>Login & Challenge Your Knowledge! 🧠</h5>
+      <hr>
+    </div>
+
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="form-group">
+        <label>📧 Mobile number or Email</label>
+        <input type="text" placeholder="Enter email or mobile" formControlName="Mobileoremail" class="form-control">
+        <span class="error-text" *ngIf="mobileoremil && mobileoremil.invalid && mobileoremil.touched">
+          Required Mobile number or Email
+        </span>
+      </div>
+
+      <div class="form-group">
+        <label>🔒 Password</label>
+        <input type="password" placeholder="Enter password" formControlName="password" class="form-control">
+        <span class="error-text" *ngIf="userpassword && userpassword.invalid && userpassword.touched">
+          Password must be at least 6 characters
+        </span>
+      </div>
+
+      <button type="submit" class="btn btn-quiz mt-3">Login & Start Quiz 🚀</button>
+    </form>
+
+    <a class="quiz-link" routerLink="/create">New here? Create an account & Play! 🎉</a>
+  </div>
+</div>

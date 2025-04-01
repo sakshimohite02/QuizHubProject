@@ -1,0 +1,99 @@
+/* 🌟 Quiz-Themed Background */
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://source.unsplash.com/1600x900/?quiz,knowledge') no-repeat center center/cover;
+}
+
+/* 🎴 Quiz-Themed Card */
+.quiz-card {
+  width: 450px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* 🔠 Heading Styles */
+h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+}
+
+h4 {
+  font-size: 18px;
+  color: #666;
+}
+
+/* 📝 Input Fields */
+.form-control {
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  transition: 0.3s;
+}
+
+.form-control:focus {
+  border-color: #4caf50;
+  box-shadow: 0px 0px 5px rgba(76, 175, 80, 0.5);
+}
+
+/* 🟢 Signup Button */
+.btn-quiz {
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  font-size: 18px;
+  background: linear-gradient(to right, #4caf50, #00c853);
+  border: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-quiz:hover {
+  background: linear-gradient(to right, #00c853, #4caf50);
+  transform: scale(1.05);
+}
+
+/* ❗ Error Messages */
+.error-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  display: block;
+  margin-top: 5px;
+}
+
+/* 🔗 Login Link */
+.quiz-link {
+  display: block;
+  margin-top: 15px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+  transition: 0.3s;
+}
+
+.quiz-link:hover {
+  color: #0056b3;
+}
+
+/* 🎬 Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,15 @@
+<div class="container mt-5 py-5">
+  <h2 class="text-center mb-4">Programming Languages Study Materials</h2>
+
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let material of studyMaterials">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">{{ material.language }}</h5>
+          <p class="card-text">{{ material.description }}</p>
+          <a [routerLink]="['/resource', material.id]" class="btn btn-primary btn-sm">View Resources</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

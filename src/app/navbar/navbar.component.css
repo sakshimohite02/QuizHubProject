@@ -1,0 +1,27 @@
+.navbar{
+    position: fixed; /* Fixes the navbar to the top */
+    top: 0; /* Sticks to the top */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.nav-link{
+    color: white;
+    font-size: 20px;
+    margin-left: 50px;
+}
+.nav-link:hover{
+    color: antiquewhite;
+}
+
+/* .btn{
+    background-color: #620d62;
+    color: antiquewhite;
+    border-radius: 20px;
+    width: 100px;
+} */
+/* .btn:hover {
+    background-color: rgb(180, 115, 162);
+    color: black;
+} */
+

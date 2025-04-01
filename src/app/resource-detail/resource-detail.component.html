@@ -1,0 +1,16 @@
+<div class="container mt-5 py-5" *ngIf="languageDetails">
+    <h2 class="text-center mb-4">{{ languageDetails.language }} Resources</h2>
+    <p>{{ languageDetails.description }}</p>
+  
+    <div class="list-group">
+      <a *ngFor="let resource of languageDetails.resources" [href]="resource.link" target="_blank" class="list-group-item list-group-item-action">
+        {{ resource.title }}
+      </a>
+    </div>
+  </div>
+  
+  <!-- If no languageDetails are found (null case) -->
+  <div *ngIf="!languageDetails" class="alert alert-warning">
+    No study materials found for this language.
+  </div>
+  

@@ -1,0 +1,65 @@
+/* .box{
+    height: 500px;
+    width: 100%;
+    background-color:white;
+    margin-top: 100px;
+}
+.heading1{
+    padding-top: 100px;
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    color: #3498DB;
+    
+} */
+
+.hero-section {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg") ;
+  min-height: 90vh;
+  color: white;
+  padding: 20px;
+}
+
+
+
+/* Hover effect for heading */
+.hero-section h1:hover {
+  color: #fbc02d; /* Change text color on hover */
+  transform: scale(1.2); /* Slight zoom effect on hover */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Adding shadow to text */
+}
+
+
+
+/* Hover effect for paragraph */
+.hero-section p:hover {
+  color: #fbc02d; /* Change text color on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Adding shadow to text */
+}
+
+
+
+  
+ .card-body{
+  border-radius:15px;
+  
+ }
+  
+  .card {
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+    color:black;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  /* .card-body{
+    background: linear-gradient(50deg, #1E88E5, #E53935);
+  } */
+
+  
+  

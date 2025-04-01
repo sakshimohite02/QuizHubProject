@@ -1,0 +1,57 @@
+<div class="quiz-container">
+  <div class="quiz-card">
+    <div class="text-center">
+      <h1><i class="fa-solid fa-brain"></i> <b>Join QuizHub</b></h1>
+      <h4>Test your knowledge. Challenge yourself!</h4>
+      <hr>
+    </div>
+
+    <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+      <div class="row">
+        <div class="col-12 mb-3">
+          <i class="fa-solid fa-user"></i> Personal Information
+        </div>
+
+        <div class="col-6">
+          <input formControlName="Firstname" type="text" class="form-control" placeholder="First Name">
+          <span class="error-text" *ngIf="userefirstname && userefirstname.invalid && userefirstname.touched">
+            First Name is required
+          </span>
+        </div>
+
+        <div class="col-6">
+          <input formControlName="Surname" type="text" class="form-control" placeholder="Surname">
+          <span class="error-text" *ngIf="usersurname && usersurname.invalid && usersurname.touched">
+            Surname is required
+          </span>
+        </div>
+      </div>
+
+      <div class="col-12 mt-3">
+        <i class="fa-solid fa-envelope"></i> Mobile number or Email
+      </div>
+      <div class="col-12 mt-2">
+        <input type="text" placeholder="Mobile number or email address" formControlName="Mobileoremail" class="form-control">
+        <span class="error-text" *ngIf="mobileoremil && mobileoremil.invalid && mobileoremil.touched">
+          Required
+        </span>
+      </div>
+
+      <div class="col-12 mt-3">
+        <i class="fa-solid fa-lock"></i> Choose a Secure Password
+      </div>
+      <div class="col-12 mt-2">
+        <input type="password" placeholder="New Password" formControlName="password" class="form-control">
+        <span class="error-text" *ngIf="Newpasword && Newpasword.invalid && Newpasword.touched">
+          Password must be at least 6 characters
+        </span>
+      </div>
+
+      <button type="submit" class="btn btn-quiz mt-3" [disabled]="signupForm.invalid">
+        Start Your Quiz Journey 🚀
+      </button>
+    </form>
+
+    <a class="quiz-link" routerLink="/login">Already registered? Log in & Play!</a>
+  </div>
+</div>

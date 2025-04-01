@@ -1,0 +1,141 @@
+.container {
+    max-width: 1200px;
+    margin-top: 110px;
+  }
+  
+  .card {
+    border-radius: 8px;
+    overflow: hidden;
+    /* border-color:rgb(123, 5, 123) ; */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  .card-body{
+    background: linear-gradient(50deg, #1E88E5, #E53935);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  
+  
+  
+  /* General Card Styles */
+
+  
+  /* .card img {
+    border-radius: 8px 8px 0 0;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+   */
+  /* Specific Styles for Each Language */
+  /* .quiz.javascript {
+    background-color: #FFEB3B;
+    color: #333333;
+    border: 2px solid #FBC02D;
+  }
+  
+  .card.python {
+    background-color: #4CAF50;
+    border: 2px solid #388E3C;
+  }
+  
+  .card.cpp {
+    background-color: #2196F3;
+    border: 2px solid #1976D2;
+  }
+  
+  .card.java {
+    background-color: #F44336;
+    border: 2px solid #D32F2F;
+  }
+  
+  .card.csharp {
+    background-color: #9C27B0;
+    border: 2px solid #7B1FA2;
+  }
+  
+  .card.ruby {
+    background-color: #E53935;
+    border: 2px solid #C62828;
+  }
+  
+  .card.swift {
+    background-color: #FF9800;
+    border: 2px solid #FB8C00;
+  }
+  
+  .card.kotlin {
+    background: linear-gradient(45deg, #1E88E5, #E53935);
+    border: none;
+  }
+  
+  .card.golang {
+    background-color: #00BCD4;
+    border: 2px solid #008394;
+  }
+  
+  .card.php {
+    background-color: #607D8B;
+    border: 2px solid #455A64;
+  }
+  
+  .card.rust {
+    background-color: #795548;
+    border: 2px solid #5D4037;
+  }
+  
+  .card.typescript {
+    background-color: #3F51B5;
+    border: 2px solid #303F9F;
+  }
+  
+  .card.r {
+    background-color: #00ACC1;
+    border: 2px solid #00838F;
+  }
+  
+  .card.sql {
+    background-color: #FFC107;
+    color: #333333;
+    border: 2px solid #FFA000;
+  }
+  
+  /* Button inside the card */
+  /* .card button {
+    background-color: #1E88E5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card button:hover {
+    background-color: #1565C0;
+  } */ 
+  
+ 
+  
+  
